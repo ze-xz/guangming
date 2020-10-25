@@ -58,7 +58,7 @@ html {
 .loading .bd .loading-ship {
   width: 10.8vw;
   height: 18.53333333vw;
-  margin-left: -5.33333333vw;
+  transform: translateX(-50%);
 }
 .loading .bd .loading-line {
   position: relative;
@@ -75,7 +75,7 @@ html {
   height: 4vw;
   background-color: #5b8cff;
   border-radius: 2vw;
-  margin-left: -100%;
+  transform: translateX(-100%);
 }
 .loading .bd p {
   width: 100%;
@@ -90,6 +90,14 @@ html {
 .bg {
   width: 100%;
   height: 100%;
+}
+.bgm {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+  position: absolute;
+  right: 6vw;
+  top: 9.33333333vw;
+  z-index: 9;
 }
 .border-line img:nth-of-type(1) {
   position: absolute;
@@ -120,6 +128,10 @@ html {
   height: 100%;
 }
 .home .inbetweening {
+  position: absolute;
+  top: 0vw;
+  left: 50%;
+  margin-left: -50vw;
   width: 100vw;
   height: 153.06666667vw;
 }
@@ -130,6 +142,7 @@ html {
   margin-left: -8.2vw;
   width: 16.4vw;
   height: 22vw;
+  z-index: 9;
 }
 .home .title {
   position: absolute;
@@ -140,6 +153,7 @@ html {
   height: 44.53333333vw;
   opacity: 0;
   animation: title1 2s linear forwards 4s;
+  z-index: 1;
 }
 .home .title2 {
   position: absolute;
@@ -150,6 +164,68 @@ html {
   height: 44.53333333vw;
   opacity: 0;
   animation: title2 4s linear forwards;
+  z-index: 1;
+}
+.home .glass {
+  width: 100vw;
+  height: 117.6vw;
+  position: absolute;
+  top: 0vw;
+  left: 50%;
+  margin-left: -50vw;
+}
+.home .ship {
+  position: absolute;
+  left: 54vw;
+  top: 73.33333333vw;
+  width: 9.46666667vw;
+  height: 31.73333333vw;
+  animation: ship 5s linear infinite 4s;
+}
+.home .sofa {
+  position: absolute;
+  top: 97.33333333vw;
+  left: 50%;
+  margin-left: -35.33333333vw;
+  width: 72.66666667vw;
+  height: 40.13333333vw;
+  z-index: 9;
+}
+.home .cabinet {
+  width: 14.93333333vw;
+  height: 21.86666667vw;
+  position: absolute;
+  left: 84.66666667vw;
+  top: 99.33333333vw;
+}
+.home .desk {
+  width: 14.93333333vw;
+  height: 28.26666667vw;
+  position: absolute;
+  left: 4.66666667vw;
+  top: 96.66666667vw;
+}
+.home .flower {
+  width: 27.86666667vw;
+  height: 32.66666667vw;
+  position: absolute;
+  right: 0vw;
+  top: 120vw;
+  z-index: 9;
+}
+.home .flower img:nth-of-type(1) {
+  width: 27.86666667vw;
+  height: 24vw;
+  animation: flower 1s linear forwards 4s;
+  opacity: 0;
+}
+.home .flower img:nth-of-type(2) {
+  width: 15.6vw;
+  height: 11.2vw;
+  position: absolute;
+  bottom: 0vw;
+  left: 50%;
+  margin-left: -3.33333333vw;
 }
 .home .person {
   position: absolute;
@@ -157,6 +233,17 @@ html {
   top: 91.33333333vw;
   width: 54.53333333vw;
   height: 34.26666667vw;
+  z-index: 9;
+  animation: person 2s linear infinite;
+}
+.home .person2 {
+  position: absolute;
+  left: 16.66666667vw;
+  top: 91.33333333vw;
+  width: 54.53333333vw;
+  height: 34.26666667vw;
+  z-index: 9;
+  animation: person 2s linear infinite 1s;
 }
 .home .text {
   width: 65.73333333vw;
@@ -183,9 +270,70 @@ html {
   margin-left: -15.8vw;
 }
 .page1 {
-  width: 13.33333333vw;
-  height: 666.66666667vw;
-  background-color: red;
+  position: relative;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 100%;
+  height: 100%;
+}
+.page1 .logo {
+  width: 16.4vw;
+  height: 22vw;
+  position: absolute;
+  left: 10.66666667vw;
+  top: 10vw;
+}
+.page1 .recognition .recognition-bg {
+  width: 76.8vw;
+  height: 89.6vw;
+  position: absolute;
+  top: 35.86666667vw;
+  left: 50%;
+  margin-left: -38.4vw;
+}
+.page1 .recognition .recognition-bd {
+  width: 72.26666667vw;
+  height: 88vw;
+  position: absolute;
+  top: 36vw;
+  left: 50%;
+  margin-left: -36.13333333vw;
+  border-radius: 10.66666667vw 10.66666667vw 72.26666667vw 72.26666667vw;
+  overflow: hidden;
+}
+.page1 .recognition .recognition-layer {
+  width: 84.8vw;
+  height: 99.6vw;
+  position: absolute;
+  top: 31.6vw;
+  left: 50%;
+  margin-left: -42.4vw;
+  z-index: 1;
+}
+.page1 .recognition input {
+  position: absolute;
+  left: 6.66666667vw;
+  top: 6.66666667vw;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+}
+.page1 .text {
+  width: 54.4vw;
+  height: 11.6vw;
+  position: absolute;
+  top: 136vw;
+  left: 50%;
+  margin-left: -27.2vw;
+}
+.page1 .btn {
+  width: 34.66666667vw;
+  height: 14.26666667vw;
+  position: absolute;
+  bottom: 4vw;
+  left: 50%;
+  margin-left: -17.33333333vw;
 }
 @keyframes title1 {
   0% {
@@ -220,5 +368,98 @@ html {
   100% {
     transform: translate(100%, -100%);
     opacity: 0;
+  }
+}
+@keyframes person {
+  0% {
+    opacity: 1;
+  }
+  49.99% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99.99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ship {
+  0% {
+    transform: rotateY(0deg) translateX(0);
+  }
+  49.99% {
+    transform: rotateY(0deg) translateX(-13.2vw);
+  }
+  50% {
+    transform: rotateY(180deg) translateX(13.33333333vw);
+  }
+  99.99% {
+    transform: rotateY(180deg) translateX(0.13333333vw);
+  }
+  100% {
+    transform: rotateY(0deg) translateX(0);
+  }
+}
+@keyframes flower {
+  0% {
+    transform: translateY(-13.33333333vw);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-height: 186.66666667vw) {
+  .page1 {
+    position: relative;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+  }
+  .page1 .logo {
+    width: 16.4vw;
+    height: 22vw;
+    position: absolute;
+    left: 10.66666667vw;
+    top: 10vw;
+  }
+  .page1 .recognition .recognition-bg {
+    width: 76.8vw;
+    height: 89.6vw;
+    position: absolute;
+    top: 35.86666667vw;
+    left: 50%;
+    margin-left: -38.4vw;
+  }
+  .page1 .recognition .recognition-layer {
+    width: 84.8vw;
+    height: 99.6vw;
+    position: absolute;
+    top: 31.6vw;
+    left: 50%;
+    margin-left: -42.4vw;
+  }
+  .page1 .text {
+    width: 54.4vw;
+    height: 11.6vw;
+    position: absolute;
+    top: 144vw;
+    left: 50%;
+    margin-left: -27.2vw;
+  }
+  .page1 .btn {
+    width: 34.66666667vw;
+    height: 14.26666667vw;
+    position: absolute;
+    bottom: 12.66666667vw;
+    left: 50%;
+    margin-left: -17.33333333vw;
   }
 }
